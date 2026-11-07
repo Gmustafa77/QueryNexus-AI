@@ -1,0 +1,5 @@
+{"id": "deductible", "question": "What is the in-network deductible per member?", "answerable": true, "expected_sources": [{"source_file": "aetna_plan.pdf", "page_number": 1}], "expected_answer_contains": ["$1,500"]}
+{"id": "prior_auth_mri", "question": "Is prior authorization required for an MRI?", "answerable": true, "expected_sources": [{"source_file": "aetna_plan.pdf", "page_number": 3}], "expected_answer_contains": ["prior authorization"]}
+{"id": "appeal_window", "question": "How many days do I have to file an appeal after a denial?", "answerable": true, "expected_sources": [{"source_file": "aetna_plan.pdf", "page_number": 4}], "expected_answer_contains": ["180 days"]}
+{"id": "form_code", "question": "Which form code must be submitted for prior authorization? PA-7731", "answerable": true, "expected_sources": [{"source_file": "aetna_plan.pdf", "page_number": 3}], "expected_answer_contains": ["PA-7731"]}
+{"id": "out_of_scope", "question": "Who won the football world cup in 1998?", "answerable": false}

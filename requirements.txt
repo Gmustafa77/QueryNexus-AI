@@ -1,0 +1,27 @@
+# Core
+streamlit>=1.38,<2
+python-dotenv>=1.0
+pymupdf>=1.24
+chromadb>=0.5.5,<2
+tiktoken>=0.7
+
+# LLM / embedding providers (LangChain integrations)
+langchain-core>=0.3,<2
+langchain-openai>=0.2,<2
+langchain-google-genai>=2.0,<4
+langchain-chroma>=0.1.4,<2   # only for the legacy ChromaManager.get_retriever() API
+
+# Databricks (VECTOR_STORE=databricks)
+databricks-sql-connector>=3.0,<5   # native :named parameters require v3+
+databricks-vectorsearch>=0.40
+
+# Optional: Databricks Model Serving as chat/embedding provider
+# (CHAT_PROVIDER=databricks or EMBEDDING_PROVIDER=databricks)
+# databricks-langchain>=0.1
+
+# Optional: cross-encoder reranking (RERANKER=cross_encoder)
+# sentence-transformers>=3.0
+
+# Testing
+pytest>=8.0
+numpy>=1.24
